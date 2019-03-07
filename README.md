@@ -2,19 +2,20 @@
 
 A simple to use, composable, command line parser for C++ 11 and beyond
 
+The packages generated with this **conanfile** can be found on [Bintray](https://bintray.com/beta/#/swissdotnet/public-conan/Clara:swissdotnet).
 
 ## For Users
 
 ### Basic setup
 
-    $ conan install 
+    $ conan install Clara/1.1.5@swissdotnet/stable
 
 ### Project setup
 
 If you handle multiple dependencies in your project is better to add a *conanfile.txt*
 
     [requires]
-    
+    Clara/1.1.5@swissdotnet/stable
 
     [generators]
     txt
@@ -33,14 +34,14 @@ The following command both runs all the steps of the conan file, and publishes t
     $ conan create . swissdotnet/testing
 
 
-
-
 ## Add Remote
 
-    $ conan remote add slepasteur "https://api.bintray.com/conan/slepasteur/public-conan"
+    $ conan remote add <REMOTE> https://api.bintray.com/conan/swissdotnet/public-conan
 
 
 ## Conan Recipe License
 
 NOTE: The conan recipe license applies only to the files of this recipe, which can be used to build and package expected.
 It does *not* in any way apply or is related to the actual software being packaged.
+
+[MIT](https://github.com/swissdotnet-sa/conan-clara/blob/master/LICENSE)
